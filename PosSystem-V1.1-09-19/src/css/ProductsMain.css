@@ -1,0 +1,96 @@
+/* Product panel styling */
+.product-panel {
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.panel-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* General styles for the button-list container */
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Aligns buttons to the left */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Adds space between buttons */
+    margin-bottom: 20px;
+}
+
+/* Default button style */
+.button-list button {
+    background-color: #add8e6; /* Light blue background */
+    color: #000000; /* Black text */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding to make the button larger */
+    font-size: 12px; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Hover state for button */
+.button-list button:hover {
+    background-color: #00008b; /* Dark blue background */
+    color: #ffffff; /* White text */
+}
+
+.button-list .button-icon {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/* Styling for the removed products button */
+#removed-button {
+    color: rgb(175, 13, 13);
+}
+
+#removed-button:hover {
+    color: #fff;
+    background-color: rgb(110, 6, 6);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* For tablet screens */
+@media screen and (max-width: 768px) {
+    .button-list {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: flex-start; /* Align buttons to the left */
+    }
+
+    .button-list button {
+        font-size: 12px; /* Decrease font size for buttons */
+        padding: 8px 10px; /* Reduce padding for smaller screens */
+        width: 100%; /* Make buttons take up the full width */
+        box-sizing: border-box;
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+    .panel-title {
+        font-size: 18px; /* Reduce panel title font size */
+    }
+
+    .button-list {
+        gap: 20px; /* Reduce gap between buttons */
+    }
+
+    .button-list button {
+        font-size: 10px; /* Decrease button font size further */
+        padding: 6px 8px; /* Reduce padding for smaller screens */
+    }
+
+    .button-list .button-icon {
+        font-size: 10px; /* Smaller icon size on mobile */
+    }
+}

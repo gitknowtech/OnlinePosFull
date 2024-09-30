@@ -1,0 +1,86 @@
+.category-model {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.category-form {
+  margin-bottom: 20px;
+}
+
+.category-form h2 {
+  margin-bottom: 10px;
+}
+
+.category-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.category-form input {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.category-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category-grid th, .category-grid td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.category-grid th {
+  background-color: #f1f1f1;
+}
+
+.category-grid td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category-grid td button:hover {
+  background-color: #218838;
+}
+
+.category-grid td button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.category-grid td button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
